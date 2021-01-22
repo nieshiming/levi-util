@@ -1,1 +1,1 @@
-export const leviName: string = 'levis'
+export const leviName: string = 'levis';
