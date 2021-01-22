@@ -1,0 +1,14 @@
+{
+  "name": "levi-utils",
+  "version": "1.0.2",
+  "description": "this is levi utils library",
+  "main": "index.js",
+  "author": "levi",
+  "license": "MIT",
+  "scripts": {
+    "compiler": "tsc"
+  },
+  "devDependencies": {
+    "typescript": "^4.1.3"
+  }
+}
