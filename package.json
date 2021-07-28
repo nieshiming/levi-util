@@ -7,6 +7,7 @@
   "scripts": {
     "start": "rollup -w -c ./build/rollup.dev.js",
     "build": "rollup -c ./build/rollup.prod.js",
+    "tsc": "tsc --emitDeclarationOnly --watch --project tsconfig.json",
     "clean": "rm -rf dist"
   },
   "dependencies": {
