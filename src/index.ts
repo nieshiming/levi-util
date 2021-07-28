@@ -1,6 +1,9 @@
-// export * from './utils'
+import _ from 'lodash';
+import { age } from './controller';
 
-import Nie, { leviName } from './utils';
-console.log(leviName);
+export const show = (key: string): string => {
+  console.log(age);
+  console.log(_.last([111, 222, 333]));
 
-console.log(Nie());
+  return `${key}_levi`;
+};
