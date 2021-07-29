@@ -6,7 +6,11 @@ import { eslint } from 'rollup-plugin-eslint';
 export default {
   ...config,
   output: {
-    ...config.output
+    file: path.resolve(__dirname, '../lib/index.js'),
+    format: 'esm',
+    name: 'leviUtil',
+    globals: { lodash: '_' },
+    sourcemap: true
   },
   plugins: [
     // eslint({

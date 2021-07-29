@@ -8,14 +8,6 @@ const extensions = [...DEFAULT_EXTENSIONS, '.ts', '.tsx'];
 
 export default {
   input: path.resolve(__dirname, '../src/index.ts'),
-  output: {
-    file: path.resolve(__dirname, '../lib/index.js'),
-    format: 'umd',
-    name: 'nsm',
-    globals: {
-      lodash: '_'
-    }
-  },
   plugins: [
     commonjs(),
     nodeResolve({

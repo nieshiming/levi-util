@@ -1,12 +1,12 @@
 {
   "name": "levi-util",
-  "version": "1.0.4",
+  "version": "1.0.8",
   "main": "lib/index.js",
   "author": "levis",
   "license": "MIT",
   "scripts": {
     "start": "rollup -w -c ./build/rollup.dev.js",
-    "build": "rollup -c ./build/rollup.prod.js",
+    "build": "yarn clean;rollup -c ./build/rollup.prod.js; yarn tsc",
     "clean": "rm -rf lib",
     "tsc": "tsc --emitDeclarationOnly --watch --project tsconfig.json"
   },
