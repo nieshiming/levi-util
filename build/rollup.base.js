@@ -1,4 +1,5 @@
 import path from 'path';
+import alias from '@rollup/plugin-alias';
 import babel from '@rollup/plugin-babel';
 import commonjs from 'rollup-plugin-commonjs';
 import { DEFAULT_EXTENSIONS } from '@babel/core';
@@ -13,6 +14,9 @@ export default {
     nodeResolve({
       extensions,
       browser: true
+    }),
+    alias({
+      entries: [{ find: '@', replacement: path.resolve(__dirname, '../src') }]
     }),
     babel({
       extensions,
