@@ -8,8 +8,7 @@ export default {
     file: path.resolve(__dirname, '../lib/index.js'),
     format: 'umd',
     name: 'leviUtil',
-    globals: { lodash: '_' },
-    sourcemap: true
+    globals: { lodash: '_' }
   },
   plugins: [...config.plugins, terser()]
 };
