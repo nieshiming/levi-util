@@ -6,3 +6,5 @@ export const getQueryString = (name: string): string | null => {
   }
   return null;
 };
+
+export const sum = (arr: number[]): number => arr.reduce((prev, cur) => prev + cur);
