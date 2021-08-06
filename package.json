@@ -7,7 +7,7 @@
   "scripts": {
     "clean": "rm -rf lib",
     "start": "rollup -w -c ./build/rollup.dev.js",
-    "build": "yarn clean;rollup -c ./build/rollup.prod.js; yarn tsc",
+    "build": "yarn clean;rollup -c ./build/rollup.prod.js;",
     "tsc": "tsc --emitDeclarationOnly --watch --project tsconfig.json",
     "test": "jest"
   },
@@ -24,6 +24,7 @@
     "@rollup/plugin-alias": "^3.1.4",
     "@rollup/plugin-babel": "^5.3.0",
     "@rollup/plugin-node-resolve": "^11.2.0",
+    "@rollup/plugin-typescript": "^8.2.5",
     "@types/jest": "^26.0.24",
     "@types/lodash": "^4.14.168",
     "@typescript-eslint/eslint-plugin": "^4.28.5",

@@ -6,7 +6,7 @@ import { eslint } from 'rollup-plugin-eslint';
 export default {
   ...config,
   output: {
-    file: path.resolve(__dirname, '../lib/index.js'),
+    dir: path.resolve(__dirname, '../lib'),
     format: 'esm',
     name: 'leviUtil',
     globals: { lodash: '_' },
