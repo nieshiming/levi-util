@@ -24,5 +24,5 @@ export default {
       exclude: 'node_modules/**'
     })
   ],
-  external: ['lodash']
+  external: ['lodash', /@babel\/runtime/]
 };
