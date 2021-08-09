@@ -1,7 +1,8 @@
 {
   "name": "levi-util",
-  "version": "1.0.8",
+  "version": "1.0.11",
   "main": "lib/index.js",
+  "types": "lib/index.d.ts",
   "author": "levis",
   "license": "MIT",
   "scripts": {
@@ -11,10 +12,13 @@
     "tsc": "tsc --emitDeclarationOnly --watch --project tsconfig.json",
     "test": "jest"
   },
+  "files": [
+    "lib",
+    "public"
+  ],
   "dependencies": {
     "@babel/runtime": "^7.14.8",
-    "@babel/runtime-corejs3": "^7.14.8",
-    "lodash": "^4.17.21"
+    "@babel/runtime-corejs3": "^7.14.8"
   },
   "devDependencies": {
     "@babel/core": "^7.13.1",
@@ -31,6 +35,7 @@
     "@typescript-eslint/parser": "^4.28.5",
     "eslint": "^7.31.0",
     "jest": "^27.0.6",
+    "lodash": "^4.17.21",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-eslint": "^7.0.0",
     "rollup-plugin-serve": "^1.1.0",

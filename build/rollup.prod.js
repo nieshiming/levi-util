@@ -9,13 +9,13 @@ export default {
     format: 'esm',
     name: 'leviUtil',
     globals: { lodash: '_' },
-    dir: path.resolve(__dirname, '../lib'),
+    dir: path.resolve(__dirname, '../lib')
   },
   plugins: [
     ...config.plugins,
     terser(),
     typescript({
       tsconfig: path.resolve(__dirname, '../tsconfig.json')
-    }),
+    })
   ]
 };
