@@ -14,6 +14,9 @@ export default {
   plugins: [
     ...config.plugins,
     terser(),
+    /**
+     * @description 去掉alias配置，输出d.ts文件时候，tsc不转换路径alias， 所以手动使用相对路径
+     * */
     typescript({
       tsconfig: path.resolve(__dirname, '../tsconfig.json')
     })

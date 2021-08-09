@@ -1,5 +1,5 @@
 import _ from 'lodash';
-export * from '@/utils';
+export * from './utils';
 
 export const show = (key: string): string => {
   console.log(_.last([111, 222, 333]));
