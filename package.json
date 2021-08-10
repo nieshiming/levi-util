@@ -1,6 +1,6 @@
 {
   "name": "levi-util",
-  "version": "1.0.16",
+  "version": "1.0.20",
   "main": "lib/index.js",
   "types": "lib/index.d.ts",
   "author": "levis",
@@ -42,5 +42,8 @@
     "rollup-plugin-terser": "^7.0.2",
     "ts-jest": "^27.0.4",
     "typescript": "^4.2.2"
+  },
+  "peerDependencies": {
+    "react": ">=16.13.0"
   }
 }
